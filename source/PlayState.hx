@@ -3,6 +3,7 @@ package;
 import flixel.FlxState;
 import flixel.FlxG;
 import flixel.FlxSprite;
+import Player;
 
 class PlayState extends FlxState
 {
@@ -16,6 +17,12 @@ class PlayState extends FlxState
 
         // Add the sprite to the game state
         add(backgroundSprite);
+
+        // create player
+        var player = new Player(20, 20);
+        add(player);
+
+        super.create();
 	}
 
 	override public function update(elapsed:Float)
