@@ -20,7 +20,7 @@ class MenuState extends FlxState
         add(backgroundSprite);
 
         // Create a text object to display the title of the game
-        var title:FlxText = new FlxText(0, 100, FlxG.width, "Cow Ball");
+        var title:FlxText = new FlxText(0, 100, FlxG.width, "Bird Ball");
         title.setFormat(null, 64, FlxColor.BLACK, "center");
         add(title);
 
